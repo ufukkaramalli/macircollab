@@ -1,5 +1,10 @@
+/* eslint-disable */
 <template>
-  <div id="app"></div>
+  <div id="app">
+    <div class="container">
+      TEST PAGE
+    </div>
+  </div>
 </template>
 <script>
 export default {
@@ -7,5 +12,6 @@ export default {
   components: {}
 };
 </script>
-
-<style></style>
+<style lang="scss">
+@import "@/scss/main.scss";
+</style>
