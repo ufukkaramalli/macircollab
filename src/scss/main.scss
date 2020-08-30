@@ -1,6 +1,42 @@
-
 @import '@/scss/_reset.scss';
 
-.container {
-    color: black;
+@import '@/scss/_variables.scss';
+
+html.dark{
+    body {
+        background: $background-dark;
+        color: white;
+    }
+}
+html.light{
+    body {
+        background: $background-light;
+        color: white;
+    }
+}
+header {
+    .container{
+        margin: 0 auto;
+        width:98%;
+    }
+}
+main[role=main]{
+    .container{
+        margin: 0 auto;
+        width:80%;
+    }
+}
+
+.row{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.3rem;
+    .col{
+        width: auto;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
 }
